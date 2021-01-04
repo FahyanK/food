@@ -1,0 +1,141 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@font-face {
+    font-family: 'NexaBold';
+    src:url('../fonts/NexaBold/NexaBold.ttf.woff') format('woff'),
+        url('../fonts/NexaBold/NexaBold.ttf.svg') format('svg'),
+        url('../fonts/NexaBold/NexaBold.ttf.eot'),
+        url('../fonts/NexaBold/NexaBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'NexaBold';
+    margin: 0;
+    padding: 0;
+}
+.bgTop{
+    background: url(../img/bg1.jpg) no-repeat 0 0 transparent;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+#motto{
+    height: 75vh;
+} #motto .jumbotron{
+    background-color: transparent !important;
+}
+.font-blue{
+    color: #1B75BC;
+}
+.font-shadow{
+    text-shadow: -1px -1px 0 rgb(252, 251, 251), 1px -1px 0 rgb(252, 251, 251), -1px 1px 0 rgb(252, 251, 251), 1px 1px 0 rgb(252, 251, 251);
+}
+
+
+/* navbar
+.navbar-light{
+    background: transparent !important;
+    transition: 0.5s ease;
+}
+.navbar-light.scrolled{
+    background: var(--light) !important;
+} */
+
+/*slider*/
+.col-item{
+    border: 2px solid #2323A1;
+    border-radius: 5px;
+    background: #FFF;
+}
+.col-item .photo img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.col-item .info{
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+.col-item:hover .info {
+    background-color: rgba(215, 215, 244, 0.5); 
+}
+.col-item .price{
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+
+.col-item .price h5{
+    line-height: 20px;
+    margin: 0;
+}
+
+.price-text-color{
+    color: #00990E;
+}
+
+.col-item .info .rating{
+    color: #003399;
+}
+
+.col-item .rating{
+    /*width: 50%;*/
+    float: left;
+    font-size: 17px;
+    text-align: right;
+    line-height: 52px;
+    margin-bottom: 10px;
+    height: 52px;
+}
+
+.col-item .separator{
+    border-top: 1px solid #FFCCCC;
+}
+
+.clear-left{
+    clear: left;
+}
+
+.col-item .separator p{
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-item .separator p i{
+    margin-right: 5px;
+}
+.col-item .btn-add{
+    width: 50%;
+    float: left;
+}
+
+.col-item .btn-add{
+    border-right: 1px solid #CC9999;
+}
+
+.col-item .btn-details{
+    width: 50%;
+    float: left;
+    padding-left: 10px;
+}
+.controls{
+    margin-top: 20px;
+}
